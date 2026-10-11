@@ -1,0 +1,21 @@
+{
+  "name": "h-pverkefni-1-ees",
+  "version": "1.0.0",
+  "description": "Vefforritun 1, Hópverkefni 1\r Elísa, Elva og Sigrún \r Hönnun: https://www.figma.com/design/ND7SiMmrXuh9RkPBweX53O/vef1-2026-h1?node-id=1480-0&t=vABAJ5CSno0fYCEu-1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvaaslaug-star/H-pverkefni-1-EES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elvaaslaug-star/H-pverkefni-1-EES/issues"
+  },
+  "homepage": "https://github.com/elvaaslaug-star/H-pverkefni-1-EES#readme"
+}
