@@ -1,5 +1,5 @@
 :root {
-  /**Fonts */
+  /**Font stærðir */
   --font-family-base: inter, helvetica, arial, sans-seriff;
   --font-size-base: 16px;
 
@@ -21,14 +21,16 @@
   --spacing-triple: calc(var(--spacing) * 3);
   --spacing-half: calc(var(--spacing) / 2);
 
-  /**Widths */
+  /**Breiddir */
   --max-width: 1200px;
   --width-offset: calc(100% - 2 * var(--offset));
 
-  /**Colors */
+  /**Litir á elementum :) */
   --color-background: #ffffff;
-  --color-text: #000000;
-  --color-border: #000000;
+  --color-text: #171717;
+  --color-text-light: #525252;
+  --color-border: #e5e5e5;
 
   --color-accent: #7f56d9;
+  --color-contrast: #53389e;
 }

@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  margin: 0;
+  background-color: var(--color-background);
+}
+
+header,
+nav {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+button {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+section {
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+  padding: 40px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.feature {
+  padding: 20px;
+}
