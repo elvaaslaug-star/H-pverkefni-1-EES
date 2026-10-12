@@ -16,3 +16,80 @@
   line-height: 1.4;
   margin: 4px 0 12px 0;
 }
+
+/**nýtt section fyrir mynd af teyminu*/
+
+.job {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 16px;
+}
+
+.team {
+  display: grid;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 32px;
+  width: 100%;
+}
+.team img {
+  object-position: center;
+  width: 1216px;
+  height: 400px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+/*nýtt section fyrir "Hugbúnaðardeild" og starfa options"*/
+
+.jobs-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jobs-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.job-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.job-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 24px 24px 28px 24px;
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-bio {
+  font-size: 16px;
+  color: #525252;
+  line-height: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.job-meta {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #525252;
+}
