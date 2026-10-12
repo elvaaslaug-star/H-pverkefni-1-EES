@@ -1,5 +1,5 @@
-@import url("/styles/config.css");
-@import url("/styles/teymid.css");
+@import url("styles/config.css");
 
-@import url("/styles/forsida.css");
-@import url("/styles/skraning.css");
+@import url("styles/forsida.css");
+@import url("styles/skraning.css");
+@import url("styles/teymid.css");
