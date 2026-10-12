@@ -1,0 +1,62 @@
+/* Aðalgámurinn fyrir spjöldin */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Neyðir 4 dálka hlið við hlið */
+  gap: 30px;
+  padding: 20px;
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hvert einasta spjald */
+.team-card {
+  display: grid;
+  gap: 8px;
+}
+
+/* Myndirnar */
+.team-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: #eee; /* Grár bakgrunnur ef engin mynd finnst */
+}
+
+/* Nöfn */
+.team-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111;
+  margin: 8px 0 0 0;
+}
+
+/* Starfsheiti */
+.team-title {
+  color: #7B5294;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Textalýsing */
+.team-desc {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 4px 0 12px 0;
+}
+
+/* Samfélagsmiðla hlekkirnir neðst */
+.team-socials {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 12px;
+  align-items: center;
+}
+
+.team-socials a {
+  color: #7B5294;
+  text-decoration: none;
+  font-size: 0.85rem;
+}

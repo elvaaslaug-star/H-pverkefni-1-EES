@@ -1,0 +1,28 @@
+{
+  "name": "h-pverkefni-1-ees",
+  "version": "1.0.0",
+  "description": "Vefforritun 1, Hópverkefni 1\r Elísa, Elva og Sigrún \r Hönnun: https://www.figma.com/design/ND7SiMmrXuh9RkPBweX53O/vef1-2026-h1?node-id=1480-0&t=vABAJ5CSno0fYCEu-1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss:css/style.css",
+    "lint": "stylelint \"**/*.scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvaaslaug-star/H-pverkefni-1-EES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elvaaslaug-star/H-pverkefni-1-EES/issues"
+  },
+  "homepage": "https://github.com/elvaaslaug-star/H-pverkefni-1-EES#readme",
+  "devDependencies": {
+    "sass": "^1.105.1",
+    "stylelint": "^17.16.0",
+    "stylelint-config-sass-guidelines": "^13.0.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
