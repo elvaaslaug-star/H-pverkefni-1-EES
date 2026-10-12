@@ -34,7 +34,7 @@ header s{
 }
 
 .card {
-    grid: grid;
+    display: grid;
     gap: 8px;
 }
 
@@ -64,7 +64,7 @@ header s{
     margin: 4px 0 12px 0;
 }
 
-.icons{
+.icon{
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: 12px;
