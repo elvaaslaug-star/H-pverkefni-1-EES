@@ -41,7 +41,6 @@ header s{
 .card-image img{
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
@@ -72,3 +71,27 @@ header s{
 }
 
 
+/**nýtt section fyrir mynd af teyminu*/
+
+.job {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 16px;
+}
+
+.team {
+    display: grid;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 32px;
+    width: 100%;
+}
+.team img{
+ object-position: center;
+ width: 1216px;
+ height: 400px;
+ object-fit: cover;
+ aspect-ratio: 16/9;
+}
