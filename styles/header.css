@@ -1,0 +1,21 @@
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  color: var(--color-text);
+  text-align: center;
+}
+
+header h3 {
+  font-size: var(--font-size-base);
+  color: var(--color-accent);
+  text-align: center;
+}
+
+header s {
+  font-size: 20px;
+  color: var(--color-text-light);
+  text-align: center;
+}

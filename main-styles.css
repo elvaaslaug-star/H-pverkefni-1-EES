@@ -1,5 +1,9 @@
 @import url("styles/config.css");
 
+@import url("styles/cards.css");
 @import url("styles/forsida.css");
+@import url("styles/header.css");
+@import url("styles/icons.css");
+@import url("styles/nav.css");
 @import url("styles/skraning.css");
 @import url("styles/teymid.css");

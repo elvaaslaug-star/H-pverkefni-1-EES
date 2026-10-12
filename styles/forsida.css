@@ -8,22 +8,6 @@ body {
   background-color: var(--color-background);
 }
 
-header,
-nav {
-  padding: 20px;
-}
-
-h1 {
-  font-size: 40px;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 14px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
 p {
   color: var(--color-text-light);
   line-height: 1.5;
