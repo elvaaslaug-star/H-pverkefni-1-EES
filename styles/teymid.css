@@ -17,6 +17,11 @@
   margin: 4px 0 12px 0;
 }
 
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
 /**nýtt section fyrir mynd af teyminu*/
 
 .job {
