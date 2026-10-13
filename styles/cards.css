@@ -1,0 +1,21 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+  font-family: var(--font-family-base);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  display: grid;
+  gap: 8px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
