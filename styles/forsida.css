@@ -8,6 +8,13 @@ body {
   background-color: var(--color-background);
 }
 
+h3 {
+  color: var(--color-text-dark);
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
 p {
   color: var(--color-text-light);
   line-height: 1.5;
@@ -39,6 +46,69 @@ section {
   padding: 20px;
 }
 
+.img-circle {
+  width: 64px;
+  height: 64px;
+  background-color: #A2A8CD;
+  border-radius: 50%;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px auto;
+}
+
 .feature {
   padding: 20px;
 }
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+
+  display: grid;
+  place-items: center;
+
+  background-image: radial-gradient(
+    circle,
+    #f4ebff 0%,
+    #f4ebff 50%,
+    #f9f5ff 51%,
+    #f9f5ff 100%);
+
+  .feature-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+
+  background-color: var(--color-accent);
+  font-size: 20px;
+
+  /*mask-image: url('../img/icon-mail.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain; */
+}
+
+
+
+/*.feature-icon-outer {
+  width: 70px;
+  height: 70px;
+  background-color: #f9f5ff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.feature-icon-inner {
+  width: 50px;
+  height: 50px;
+  background-color: #f4ebff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+} */

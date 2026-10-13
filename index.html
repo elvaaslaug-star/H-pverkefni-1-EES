@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="main-styles.css" />
   </head>
   <body>
+    <nav>
+      <ul>
+        <div class="logo">
+          <li>
+            <a href="index.html"
+              ><img src="img/Logomark.svg" alt="Forritið"
+            /></a>
+            <a href="index.html">Forritið</a>
+          </li>
+        </div>
+        <div class="left">
+          <li>
+            <strong><a href="index.html">Forsíða</a></strong>
+          </li>
+          <li><a href="sidur/teymid.html">Teymið</a></li>
+          <li><a href="sidur/index.html">Forritið</a></li>
+        </div>
+        <div class="right">
+          <li><a href="sidur/skraning.html">Innskráning</a></li>
+          <li class="takki"><a href="sidur/skraning.html">Skráðu þig</a></li>
+        </div>
+      </ul>
+    </nav>
+
     <header class="intro">
       <h1>Forritið hjálpar þér við daglegt líf</h1>
       <p>
@@ -29,13 +53,23 @@
       </section>
       <section class="features">
         <div class="feature">
-          <h3>Öll skilaboð á einum stað</h3>
-          <p>
-            aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
-            vestibulum. Nunc non neque sapien.
-          </p>
+          <div class="feature-icon">
+            <img  
+              src="./img/Icon-mail.png" 
+              alt="Tölvupóstur"/>
+          </div>
+            <h3>Öll skilaboð á einum stað</h3>
+            <p>
+              aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
+              vestibulum. Nunc non neque sapien.
+            </p>
         </div>
         <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/Icon-zap.png" 
+              alt="Spjall"/>
+          </div>
           <h3>Svarar öllum þínum spurningum</h3>
           <p>
             aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
@@ -43,6 +77,11 @@
           </p>
         </div>
         <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/icon-bar.png" 
+              alt="Verkefnalisti"/>
+          </div>
           <h3>Sér um verkefnalista</h3>
           <p>
             aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
@@ -50,6 +89,11 @@
           </p>
         </div>
         <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/icon-smile.png" 
+              alt="Skýrslur"/>
+          </div>
           <h3>Sér um samskipti</h3>
           <p>
             aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
@@ -57,6 +101,11 @@
           </p>
         </div>
         <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/icon-command.png" 
+              alt="Tól"/>
+          </div>
           <h3>Tengist öðrum tólum</h3>
           <p>
             aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
@@ -64,6 +113,11 @@
           </p>
         </div>
         <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/icon-message.png" 
+              alt="Teymi"/>
+          </div>
           <h3>Kröftugt teymi aðstoðar þig</h3>
           <p>
             aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
@@ -72,12 +126,18 @@
         </div>
       </section>
       <section class="intro">
-        <p>Sisyphus</p>
+        <p>
+          <img src="./img/Logomark.png" alt="Logomark" />
+          <h3>Sisyphus</h3>
+        </p>
         <h2>
           Við höfum gjörbreytt fyrirtækinu okkar með því að byrja að nota
           Forritið.
         </h2>
-        <img src="myndir/forritid.png" alt="Jóna Jóns" width="80" />
+        <img 
+          class="img-circle"
+          src="/img/Jóna.png" 
+          alt="Jóna Jóns" />
         <p><strong>Jóna Jóns</strong></p>
         <p>Framkvæmdarstjóri, Sisyphus</p>
       </section>
@@ -96,6 +156,11 @@
       </section>
       <section class="features">
         <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/Icon-mail.png" 
+              alt="Tölvupóstur"/>
+          </div>
           <h3>Allt teymið á sama stað</h3>
           <p>
             Aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
@@ -103,7 +168,12 @@
           </p>
           <a href="fyrirtaeki">Læsa meira</a>
         </div>
-        <div>
+        <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/Icon-zap.png" 
+              alt="Spjall"/>
+          </div>
           <h3>Svör, strax</h3>
           <p>
             Etiam mattis elementun ex elemenrum. Sed ar ipsim nel ruerp ultices
@@ -111,7 +181,12 @@
           </p>
           <a href="fyrirtaeki">Læsa meira</a>
         </div>
-        <div>
+        <div class="feature">
+          <div class="feature-icon">
+            <img  
+              src="./img/icon-bar.png" 
+              alt="Skýrsla"/>
+          </div>
           <h3>Skýrslur fyrir allt</h3>
           <p>
             Aliquam ultrovrd nibm eget ipsum vesribulum sit amer plaverat newjr
@@ -129,5 +204,35 @@
         </button>
       </section>
     </main>
+    <footer>
+      <div class="footer-cards">
+        <div class="forritið">
+          <h3>Forritið</h3>
+          <p>Yfirlit</p>
+          <p>Virkni</p>
+        </div>
+
+        <div class="fyrirtækið">
+          <h3>Fyrirtækið</h3>
+          <p>Um okkur</p>
+          <p>Laus störf</p>
+          <p>Fjölmiðlar</p>
+        </div>
+
+        <div class="samfélagsmiðlar">
+          <h3>Samfélagsmiðlar</h3>
+
+          <p>LinkedIn</p>
+          <p>Facebook</p>
+          <p>Github</p>
+        </div>
+
+        <div class="logo og copyright">
+          <img src="img/Logomark.svg" alt="Forritið" />
+          <h3>Forritið</h3>
+          <p>@ 2099 Forritið</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

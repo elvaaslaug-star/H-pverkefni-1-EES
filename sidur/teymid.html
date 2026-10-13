@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="../main-styles.css" />
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <ul class ="left">
+        <li>
+          <strong><a href="../index.html">Forsíða</a></strong>
+        </li>
+        <li><a href="teymid.html">Teymið</a></li>
+        <li><a href="../index.html">Forritið</a></li>
+      </ul>
+      <ul class="right">  
+        <li><a href="skraning.html">Innskráning</a></li>
+        <li><a href="skraning.html">Skráðu þig</a></li>
+      </ul>
+    </nav>
 
     <header>
       <div class="h1">
@@ -72,14 +84,17 @@
 
     <!-- nýtt section fyrir "laus störf" og myndina-->
 
-    <!--divider hér-->
+  <hr class="divider">
 
     <header>
-        <div class="job">
-        <h3>Button ("Laus störf")</h3>
+      <div class="job">
+        <h3 class="takki">Laus störf</h3>
         <h2>Við erum að leita að frábæru fólki</h2>
-        <p>Aenean ultricies odio justo, in maximus libero viverra non. Nam elementum tellus sed ante ornare venenatis.</p>
-        </div>
+        <p>
+          Aenean ultricies odio justo, in maximus libero viverra non. Nam
+          elementum tellus sed ante ornare venenatis.
+        </p>
+      </div>
     </header>
 
     <div class="team">
@@ -115,19 +130,55 @@
     </div>
   </main>
 
-
-
-<!--nýtt section fyrir skráningu-->
+  <!--nýtt section fyrir skráningu-->
 
   <main class="signup-container">
     <h2 class="signup-title">Fáðu póst þegar nýtt starf er í boði</h2>
     <p class="signup-text">Við látum þig vita um leið og nýtt starf er í boði!</p>
     <form class="signup-form">
+      <div class="wrapper">
       <input type="email" placeholder="Netfang" required />
 
-      <button type="submit">Skrá mig</button>
-    
+      <p class="signup-note">Persónuverndarstefna</p>
+      </div>
+            <button type="submit">Skrá mig</button>
     </form>
+    </main>
+
+  <footer>
+    <div class="footer-cards">
+    <div>
+      <h3>Forritið</h3>
+      <a href="#">Yfirlit</a>
+      <a href="#">Virkni</a>
+    </div>
+
+    <div>
+      <h3>Fyrirtækið</h3>
+      <a href="#">Um okkur</a>
+      <a href="#">Laus störf</a>
+      <a href="#">Fjölmiðlar</a>
+    </div>
+
+    <div>
+      <h3>Samfélagsmiðlar</h3>
+      <a href="#">LinkedIn</a>
+      <a href="#">Facebook</a>
+      <a href="#">GitHub</a>
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="../img/logo.png" alt="" width="24" height="24" />
+        <span>Forritið</span>
+      </div>
+        <p>@ 2099 Forritið</p>
+    </div>
+  </footer>
+
+
+
 
   </body>
 </html>
