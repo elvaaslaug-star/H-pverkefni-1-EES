@@ -52,9 +52,10 @@
 .jobs-container {
   width: 100%;
   max-width: 800px;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 64px;
 }
 
 .jobs-name {
@@ -68,6 +69,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+
 }
 
 .job-card {
@@ -80,6 +82,7 @@
 .job-title {
   font-size: 18px;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .job-bio {
@@ -109,6 +112,8 @@
   gap: 64px;
   padding: 96px 0px 96px 0px;
   text-align: center;
+  background-color: #FAFAFA;
+  height: 402px;
 }
 
 .signup-title {
@@ -123,14 +128,16 @@
   font-weight: 400;
   color: #525252;
   line-height: 1.875rem;
-  gap: 20px; 
 }
 
 .signup-form {
   text-align: center;
+  display: block;
+  width: 480px;
+  margin: 0 auto;
 }
 
-.input-wrapper {
+.wrapper {
   display: inline-block;
   vertical-align: top;
   text-align: left;
@@ -139,7 +146,7 @@
 }
 
 .signup-form input[type="email"] {
-  width: 100%;
+  width: 360px;
   height: 48px;
   padding: 12px 14px 12px 16px;
   border: 1px solid #D4D4D4;
@@ -147,6 +154,7 @@
   font-size: 16px;
   outline: none;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .privacy-link {
@@ -154,4 +162,12 @@
   margin-top: 8px;
   font-size: 14px;
   color: #525252;
+  
+  text-decoration: underline;
+}
+
+.signup-form button {
+  white-space: nowrap;
+  height: 48px;
+  border-radius: 8px;
 }
