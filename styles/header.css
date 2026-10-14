@@ -19,3 +19,9 @@ header s {
   color: var(--color-text-light);
   text-align: center;
 }
+
+header h2{
+  font-size: 36px;
+  color: var(--color-text);
+  margin: 0;
+}
