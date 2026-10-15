@@ -19,3 +19,23 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+
+@media (width <= 400px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 40px;
+    width: 100%; 
+    justify-items: center;
+  }
+
+ 
+  .card-image img.card-img,
+  .card-image img.team.img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    
+  }
+}
