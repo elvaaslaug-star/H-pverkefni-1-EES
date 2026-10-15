@@ -145,19 +145,23 @@ img {
 
 .tolva-half-img {
   display: block;
+  width: 100%;
 }
 
 .tolva-img {
   display: none;
+  width: 100%;
 }
 
 .mynd2-img {
   display: block;
+  width: 100%;
 }
 
 .mynd2-2 {
   margin-top: 20px;
   display: none;
+  width: 100%;
 }
 
 @media (width <= 400px) {
