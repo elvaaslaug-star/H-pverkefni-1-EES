@@ -65,9 +65,75 @@ nav a.takki {
   color: var(--color-background);
 }
 
-@media (max-width: 700px) {
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 400px) {
   nav {
-    grid-template-columns: 1fr auto;
-    row-gap: var(--spacing);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: var(--spacing) var(--offset);
+    width: 100%;
+    box-sizing: border-box;
   }
+
+  nav ul.left,
+  nav ul.right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    width: 22px;
+    height: 16px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    grid-column: 3;
+    outline: none;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #171717;
+    border-radius: 2px;
+    margin-bottom: 5px;
+  }
+  .hamburger span:last-child {margin-bottom: 0;}
+
+  nav.open .hamburger span:nth-child(1){
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+  }
+
+  nav.open .hamburger span:nth-child(2){
+    display: none;
+  }
+
+  nav.open .hamburger span:nth-child(3){
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 7px;
+  }
+
+
+  .logo {
+    justify-content: center;
+    margin-bottom: var(--spacing-half);
+  }
+
+  nav ul {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: var(--spacing);
+    margin: 8px 0;
+  }
+
+  
 }
