@@ -168,6 +168,8 @@
   white-space: nowrap;
   height: 48px;
   border-radius: 8px;
+  background-color: var(--color-accent);
+  color: var(--color-background);
 }
 
 .signup-note {
@@ -191,4 +193,36 @@
   margin: 0 auto;
   margin-top: 16px;
 
+}
+
+@media (width >= 400px) {
+  .signup-title {
+    font-size: 36px;
+    line-height: 1.875rem;
+  }
+
+  .signup-form {
+    width: 480px;
+  }
+
+  .team {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .team img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .job-cards {
+    grid-template-columns: repeat(1fr);
+  }
 }
