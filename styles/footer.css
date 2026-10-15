@@ -47,13 +47,23 @@ footer {
 }
 
 .footer-logo {
-  display: grid;
+  display:grid;
   grid-auto-flow: column;
   align-items: center;
   gap: var(--spacing-half);
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-text);
+  padding: 20px;
+}
+
+.footer-logo-byrja {
+  display: block;
+  text-align: end;
+}
+
+.footer-logo-enda {
+  display: none;
 }
 
 @media (min-width: 640px) {
@@ -71,5 +81,17 @@ footer {
     grid-template-columns: 1fr auto;
     align-items: center;
     justify-items: stretch;
+  }
+}
+
+@media (width <=400px) {
+  .footer-logo-byrja {
+    display: none;
+  }
+  .footer-logo-enda {
+    display: block;
+  }
+  .footer-logo {
+    display: block;
   }
 }

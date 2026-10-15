@@ -85,6 +85,12 @@ p3 {
   padding: 40px;
 }
 
+.intro-gratt {
+  text-align: center;
+  background-color: #FAFAFA;
+  padding: 40px;
+}
+
 .img-circle {
   width: 64px;
   height: 64px;
@@ -102,7 +108,7 @@ p3 {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .feature {
