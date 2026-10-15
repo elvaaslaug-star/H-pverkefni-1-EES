@@ -29,10 +29,12 @@ nav ul {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+  justify-self: start;
+  color: var(--color-nav);
 }
 
 .logo:hover {
-  color: var(--color-text);
+  color: var(--color-nav);
 }
 
 .left {
@@ -69,14 +71,57 @@ nav a.takki {
   display: none;
 }
 
-@media (max-width: 400px) {
+/**mobile stærð*/
+@media (max-width: 700px) {
   nav {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: var(--spacing) var(--offset);
+    grid-template-columns: 1fr auto;
+    row-gap: 0;
+  }
+
+  .hamburger {
+    display: block;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    grid-column: 2;
+    outline: none;
+    position: relative;
+  }
+
+  .hamburger span {
+    display: block;
     width: 100%;
-    box-sizing: border-box;
+    height: 2px;
+    background-color: var(--color-nav);
+    border-radius: 2px;
+    position: absolute;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+  .hamburger span:nth-child(2) {
+    top: 8px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 16px;
+  }
+
+  /**búa til x þegar menuið opnast*/
+
+  nav.open .hamburger span:nth-child(1) {
+    top: 8px;
+    transform: rotate(45deg);
+  }
+
+  nav.open .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  nav.open .hamburger span:nth-child(3) {
+    top: 8px;
+    transform: rotate(-45deg);
   }
 
   nav ul.left,
@@ -84,56 +129,40 @@ nav a.takki {
     display: none;
   }
 
-  .hamburger {
-    display: block;
-    width: 22px;
-    height: 16px;
-    background: transparent;
-    border: none;
-    padding: 0;
-    grid-column: 3;
-    outline: none;
-  }
-
-  .hamburger span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #171717;
-    border-radius: 2px;
-    margin-bottom: 5px;
-  }
-  .hamburger span:last-child {margin-bottom: 0;}
-
-  nav.open .hamburger span:nth-child(1){
-    transform: rotate(45deg);
-    position: absolute;
-    top: 7px;
-  }
-
-  nav.open .hamburger span:nth-child(2){
-    display: none;
-  }
-
-  nav.open .hamburger span:nth-child(3){
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 7px;
-  }
-
-
-  .logo {
-    justify-content: center;
-    margin-bottom: var(--spacing-half);
-  }
-
-  nav ul {
+  nav.open ul.left,
+  nav.open ul.right {
+    display: grid;
+    grid-column: 1 / -1;
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    gap: var(--spacing);
-    margin: 8px 0;
+    justify-content: stretch;
+    gap: 20px;
+    margin: 0;
   }
 
-  
+  nav.open ul.left {
+    padding: var(--spacing-triple) 0 var(--spacing);
+    margin-top: var(--spacing);
+    border-top: 1px solid var(--color-border);
+  }
+
+  nav.open ul.right {
+    padding-bottom: var(--spacing);
+  }
+
+  nav.open ul.right li:last-child {
+    order: -1;
+  }
+
+  /* breiddin á tökkunum */
+  nav.open ul.right a {
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+  }
+
+  nav.open ul.right a.takki {
+    border-color: var(--color-accent);
+  }
 }

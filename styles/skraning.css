@@ -5,7 +5,7 @@ main {
 .innskraning {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--offset);
+  gap: 16px;
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
@@ -14,8 +14,27 @@ main {
 .innskraning-haus {
   justify-items: center;
   display: grid;
-  gap: var(--spacing-half);
+  gap: 8px;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+/**reyna að laga netfang og lykilorð kassana*/
+
+.innskraning input[type="email"],
+.innskraning input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--color-background);
+}
+
+.innskraning input::placeholder {
+  color: var(--color-text-light);
 }
 
 .innskraning-haus h1 {
@@ -25,6 +44,7 @@ main {
 }
 .innskraning label {
   font-size: var(--font-size-footer-);
+  font-weight: 500;
   color: var(--color-text);
 }
 
@@ -55,6 +75,9 @@ main {
 .innskraning button {
   width: 100%;
   justify-self: stretch;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
 }
 
 .innskraning button:hover {

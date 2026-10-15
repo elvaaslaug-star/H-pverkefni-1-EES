@@ -13,7 +13,7 @@
   --font-size-footer-small: 1rem;
 
   --font-size-button: 1rem;
-  
+
   /**Spacing */
   --offset: 20px;
 
@@ -30,9 +30,10 @@
   --color-text: #171717;
   --color-text-light: #525252;
   --color-border: #e5e5e5;
+  --color-nav: #404040;
 
   --color-accent: #7f56d9;
   --color-contrast: #53389e;
-  --color-accent-light: #6941C6;
-  --color-accent-purple: #F9F5FF;
+  --color-accent-light: #6941c6;
+  --color-accent-purple: #f9f5ff;
 }
