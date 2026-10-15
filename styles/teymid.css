@@ -35,13 +35,14 @@
   display: grid;
   justify-content: center;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   gap: 32px;
   width: 100%;
 }
 .team img {
   object-position: center;
-  width: 1216px;
+ 
+  width: 1000px;
   height: 400px;
   object-fit: cover;
   aspect-ratio: 16/9;
@@ -52,9 +53,10 @@
 .jobs-container {
   width: 100%;
   max-width: 800px;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 64px;
 }
 
 .jobs-name {
@@ -68,6 +70,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+
 }
 
 .job-card {
@@ -80,6 +83,7 @@
 .job-title {
   font-size: 18px;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .job-bio {
@@ -94,7 +98,97 @@
   grid-auto-flow: column;
   justify-content: left;
   align-items: center;
-  gap: 8px;
+  gap: 0px;
   font-size: 16px;
   color: #525252;
+}
+
+/* nýtt section fyrir signup*/
+.signup-container {
+  width: 100%;
+  max-width: 1440px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 64px;
+  padding: 70px 0px 70px 0px;
+  text-align: center;
+  background-color: #FAFAFA;
+  }
+
+.signup-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 2.75rem;
+}
+
+.signup-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #525252;
+  line-height: 1.875rem;
+}
+
+.signup-form {
+  text-align: center;
+  display: block;
+  width: 480px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 8px;
+  width: 360px;
+}
+
+.signup-form input[type="email"] {
+  width: 360px;
+  height: 48px;
+  padding: 12px 0 12px 16px;
+  border: 1px solid #D4D4D4;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.privacy-link {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #525252;
+}
+
+.signup-form button {
+  white-space: nowrap;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.signup-note {
+  margin: 0;
+}
+
+.takk {
+  color: var(--color-accent-light);
+  display: inline-block;
+  border-radius: 16px;
+  padding: 4px 12px 4px 12px;
+  background-color: var(--color-accent-purple);
+  font-size: 14px;
+}
+
+.undertext {
+  color:#525252;
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 16px;
+
 }

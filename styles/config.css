@@ -6,14 +6,14 @@
   --font-size-header: 2rem;
   --font-size-header-small: 1.5rem;
 
-  --font-size-nav: 1.125rem;
+  --font-size-nav: 1rem;
   --font-size-nav-large: 1.5rem;
 
   --font-size-footer: 0.8rem;
   --font-size-footer-small: 1rem;
 
   --font-size-button: 1rem;
-
+  
   /**Spacing */
   --offset: 20px;
 
@@ -33,4 +33,6 @@
 
   --color-accent: #7f56d9;
   --color-contrast: #53389e;
+  --color-accent-light: #6941C6;
+  --color-accent-purple: #F9F5FF;
 }

@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="../main-styles.css" />
   </head>
   <body>
-    <nav>
-      <ul class ="left">
-        <li>
-          <strong><a href="../index.html">Forsíða</a></strong>
-        </li>
-        <li><a href="teymid.html">Teymið</a></li>
-        <li><a href="../index.html">Forritið</a></li>
-      </ul>
-      <ul class="right">  
-        <li><a href="skraning.html">Innskráning</a></li>
-        <li><a href="skraning.html">Skráðu þig</a></li>
-      </ul>
+     <nav>
+        <a class="logo" href="../index.html">
+          <img src="../img/Logomark.svg" alt="">
+            <span>Forritið</span>
+        </a>
+          <ul class="left">
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="teymid.html">Teymið</a></li>
+          <li><a href="../index.html">Forritið</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="skraning.html">Innskráning</a></li>
+          <li><a class="takki" href="skraning.html">Skráðu þig</a></li>
+        </ul>
     </nav>
 
     <header>
@@ -88,9 +90,9 @@
 
     <header>
       <div class="job">
-        <h3>Button ("Laus störf")</h3>
+        <h3 class="takk">Laus störf</h3>
         <h2>Við erum að leita að frábæru fólki</h2>
-        <p>
+        <p class="undertext">
           Aenean ultricies odio justo, in maximus libero viverra non. Nam
           elementum tellus sed ante ornare venenatis.
         </p>
@@ -127,7 +129,23 @@
         <span class="job-type">Fullt starf</span>
       </div>
     </div>
+    </div>
   </main>
+
+  <!--nýtt section fyrir skráningu-->
+
+  <main class="signup-container">
+    <h2 class="signup-title">Fáðu póst þegar nýtt starf er í boði</h2>
+    <p class="signup-text">Við látum þig vita um leið og nýtt starf er í boði!</p>
+    <form class="signup-form">
+      <div class="wrapper">
+      <input type="email" placeholder="Netfang"/>
+
+      <p class="signup-note"><u>Persónuverndarstefna</u></p>
+      </div>
+          <button type="submit">Skrá mig</button>
+    </form>
+    </main>
 
   <footer>
     <div class="footer-cards">
@@ -154,12 +172,13 @@
 
     <div class="footer-bottom">
       <div class="footer-logo">
-        <img src="../img/logo.png" alt="" width="24" height="24" />
+        <img src="../img/Logomark.svg" alt=""/>
         <span>Forritið</span>
-      </div>
         <p>@ 2099 Forritið</p>
-    </div>
   </footer>
+
+
+
 
   </body>
 </html>

@@ -1,65 +1,73 @@
 nav {
   font-family: var(--font-family-base);
   font-size: var(--font-size-nav);
-
   position: sticky;
   top: 0;
-  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: var(--spacing-triple);
+  padding: var(--spacing) var(--offset);
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
 }
 
 nav ul {
   display: grid;
   grid-auto-flow: column;
   list-style: none;
-  gap: 20px;
-  border-bottom: 1px solid var(--color-border);
-  background-color: var(--color-background);
-  padding: 20px;
-  margin-bottom: 20px;
+  gap: var(--spacing-triple);
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .logo {
-  font-weight: 700 bold;
+  font-weight: 700;
+  font-size: var(--font-size-nav);
+  gap: var(--spacing-half);
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
 }
 
-.right {
-  justify-content: right;
-}
-
-.right :hover {
-  color: var(--color-accent);
+.logo:hover {
+  color: var(--color-text);
 }
 
 .left {
-  justify-content: left;
+  justify-content: start;
 }
 
-.left :hover {
+.right {
+  justify-content: end;
+  gap: var(--spacing);
+}
+
+.takki {
+  padding: 10px 16px;
+  background-color: var(--color-accent);
+  color: white;
+  border-radius: 8px;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
   color: var(--color-accent);
 }
 
-nav ul strong,
-nav ul a[aria-current="page"] {
-  font-weight: normal;
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-nav ul a {
-  text-decoration: none;
-  color: var(--color-text);
+nav a.takki {
+  color: var(--color-background);
 }
 
 @media (max-width: 700px) {
   nav {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 400px) {
-  nav ul {
-    grid-auto-flow: row;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px 20px;
+    grid-template-columns: 1fr auto;
+    row-gap: var(--spacing);
   }
 }
