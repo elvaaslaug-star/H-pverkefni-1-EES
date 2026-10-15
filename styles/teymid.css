@@ -74,7 +74,7 @@
 }
 
 .job-card {
-  background-color: #ffffff;
+  background-color: var(--color-background);
   border: 1px solid #e5e5e5;
   border-radius: 16px;
   padding: 24px 24px 28px 24px;
@@ -195,34 +195,70 @@
 
 }
 
-@media (width >= 400px) {
-  .signup-title {
-    font-size: 36px;
-    line-height: 1.875rem;
-  }
-
-  .signup-form {
-    width: 480px;
+@media (max-width: 400px) {
+   .job {
+    padding: 32px 16px;
   }
 
   .team {
     display: block;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 0 16px;
     box-sizing: border-box;
   }
 
-  .team img {
+  .team img{
     display: block;
     width: 100%;
-    max-width: 1000px;
     height: auto;
+    aspect-ratio: 16/9;
     object-fit: cover;
   }
 
+  .jobs-container {
+    padding: 0 16px;
+    margin: 40px auto;
+    box-sizing: border-box;
+  }
+
   .job-cards {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .signup-container {
+    padding: 48px 16px;
+    box-sizing: border-box;
+  }
+
+  .signup-title {
+    font-size: 16px;
+    line-height: 2.25rem;
+  }
+
+  .signup-text {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+
+  .signup-form {
+    width: 100%;
+    display: grid;
+    gap: 12px;
+  }
+
+  .wrapper {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .signup-form input[type="email"] {
+    width: 100%;
+  }
+
+  .signup-form button {
+    width: 100%;
   }
 }
+  
+  
