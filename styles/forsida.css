@@ -13,7 +13,6 @@ h2 {
   font-size: var(--font-size-header);
   margin-bottom: var(--spacing);
   color: var(--color-text);
-  overflow-wrap: break-word;
 }
 
 h3 {
@@ -22,40 +21,35 @@ h3 {
   line-height: 30px;
   margin-bottom: var(--spacing);
   font-weight: bold;
-  overflow-wrap: break-word;
 }
 
 h4 {
   color: var(--color-text-dark);
   font-size: 20px;
   margin-bottom: var(--spacing);
-  overflow-wrap: break-word;
 }
 
 p {
   color: var(--color-text-light);
   line-height: 1.5;
   font-size: var(--font-size-base);
-  overflow-wrap: break-word;
 }
  
 p2 {
   color: var(--color-accent);
   line-height: 1.5;
-  overflow-wrap: break-word;
 }
 
 p3 {
   color: var(--color-text-dark);
   line-height: 1.5;
   font-weight: bold;
-  overflow-wrap: break-word;
 }
 
 
 .button{
-  display: grid;
   background-color: var(--color-accent);
+  text-align: center;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -84,10 +78,6 @@ p3 {
 .button-lm-a{
   color: #000000;
   text-decoration: none;
-}
-
-section {
-  padding: 20px;
 }
 
 .intro {
@@ -151,4 +141,39 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.tolva-half-img {
+  display: block;
+}
+
+.tolva-img {
+  display: none;
+}
+
+.mynd2-img {
+  display: block;
+}
+
+.mynd2-2 {
+  margin-top: 20px;
+  display: none;
+}
+
+@media (width <= 400px) {
+  .tolva-half-img{
+    display: none;
+  }
+  .tolva-img{
+    display: block;
+  }
+  .features{
+    grid-template-columns: 1fr;
+  }
+  .mynd2-img {
+    display: none;
+  }
+  .mynd2-2 {
+    display: block;
+  }
 }
